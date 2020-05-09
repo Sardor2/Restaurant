@@ -19,16 +19,8 @@ p {
 	font-size: 1.5625rem;
 }
 .order-button {
-	font-size: 25px;
-	font-weight: 700;
-	color: #ff7f7f;
-	padding: 15px 70px;
-	outline: none;
-	border: 1px solid white;
-	border-radius: 50px;
-	cursor: pointer;
-	margin-top: 40px;
-	text-transform:uppercase;
+	border-radius: 100px;
+	text-transform: uppercase;
 }
 
 /*HEADER*/
@@ -51,6 +43,7 @@ p {
 	color:#fff;
 	font-size: 16px;
 	margin-right: 20px;
+	text-align: center;
 }
 
 .nav-link:hover {
@@ -61,10 +54,13 @@ p {
 	height: 80px;
 	margin-left: 50px;
 }
+.search {
+
+}
 .search-icon {
 	color:#fff;
 	font-size: 16px;
-	margin:0 50px;
+	margin:0 auto;
 	cursor: pointer;
 }
 .intro {
@@ -82,12 +78,14 @@ p {
 	width: 30%;
 	color: #fadce0;
 }
-.intro button:hover {
-	color:#fff;
-	background-color:#ff7f7f;
-	border:1px solid #fff;
+.intro .order-button {
+	background-color: #fff;
+	color:#ff7f7f;
+	font-weight: 700;
 }
-
+.btn-dark {
+	border:none;
+}
 
 /*Features*/
 
@@ -97,6 +95,7 @@ p {
 	text-align: center;
 	padding: 3% 0;
 	position: relative;
+	border-style:none;
 }
 
 
@@ -169,14 +168,9 @@ p {
 	margin-top: 20px;
 	opacity: 0.8;
 }	
-.order-btn {
+#order button {
 	background-color: #ff7f7f;
-	color:#fff;
-}
-.order-btn:hover {
-	background-color: white;
-	color:#ff7f7f;
-	border:2px solid #ff7f7f;
+	font-weight: 700;
 }
 svg {
 	display: 
@@ -242,13 +236,10 @@ svg {
 }
 #order-2 button {
 	background-color: #ff7f7f;
-	color: white;
+	font-weight: 700;
+
 }
-#order-2 button:hover {
-	background-color: white;
-	color:#ff7f7f;
-	border:2px solid #ff7f7f;
-}
+
 .e1 {
 	position: absolute;
 	left: 615px;
@@ -314,25 +305,21 @@ form {
 	position: relative;
 }
 .form-input {
-	width: 640px;
-	height: 50px;
+    width: 50%;
 	font-size: 25px;
 	border-style: none;
 	border-radius: 30px;
 	background-color: #f4f4f4;
 	outline: none;
+	display: block;
+	margin: 0 auto;
+	margin-bottom: 10px;
 }
 .form-btn {
 	background-color: #ff7f7f;
 	color: white;
-	font-size: 1.56rem;
-	height: 50px;
-	padding:0 27px;
-	border:none;
 	font-weight: 700;
 	border-radius: 30px;
-	position: relative;
-	right:100px;
 	outline:none;
 	cursor: pointer;
 }
@@ -452,7 +439,8 @@ li {
 		width: 60%;
 	}
 	.order-button {
-		width: 50%;
+		width: 60%;
+		font-size: 1.5rem;
 	}
 
 	.feature {
@@ -499,5 +487,126 @@ li {
 	}
 	.form-btn {
 		font-size: 1.2rem;
+	}
+}
+
+@media (max-width: 548px) {
+	h2 {
+		font-size: 20px;
+
+	}
+	p {
+		font-size:15px
+	}
+	.logo {
+		margin-left: 0;
+		width: 70px;
+		height: 70px;
+	}
+	.order-button {
+		font-size: 1em;
+		width: 80%
+	}
+	.emoji {
+		width: 50px;
+		height: 50px;
+	}
+	.intro {
+		padding:40px 0;
+		padding-left: 20px	
+	}
+	.intro-title {
+		font-size: 30px;
+	}
+	.intro-text {
+		font-size: 15px;
+	}
+
+	.title-feature {
+		font-size: 20px
+	}
+	.text-feature {
+		font-size: 13px
+	}
+	#order {
+		padding: 20px 0;
+		padding-left: 10px;
+	}
+	.order-img {
+		width: 200px;
+		height: 200px;
+
+	}
+	.order-description button {
+		font-size: 20px;
+		width: 100%;
+	}
+	svg {
+		width: 100%;
+	}
+
+	#order-2 {
+		padding:20px 0;
+		padding-left: 10px
+	}
+	.e2 {
+		top:10px;
+		left: 200px;
+	}
+	.e4 {
+		display: none;
+		bottom: 10px;
+	}
+	#testimonials {
+
+	}
+	.container {
+
+	}
+	.testimonial-img {
+		width: 100px;
+		height: 100px
+	}
+	.container h2 {
+		font-size: 30px
+	}
+	.container p {
+		font-size: 20px;
+	}
+
+	.right-curvy-part {
+		display: none;
+	}
+	.left-curvy-part {
+		width: 324px;
+	}
+	#subscribe span img {
+		display: none;
+	}
+	form {
+		padding-left: 0;
+	}
+	.form-input {
+		width: 100%;
+	}
+
+	footer {
+		text-align: center;
+		padding: 10px 0;
+		padding-left: 10px;
+	}
+	.footer-text {
+		font-size:15px;
+		margin: 10px auto;
+	}
+	div.col-lg-2 {
+		text-align: center;
+	}
+	.social-media {
+		display: inline-block;
+		justify-content: center;
+	}
+	.social-media-icon {
+		margin-right: 5px;
 	}
 }
