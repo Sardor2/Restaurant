@@ -32,7 +32,7 @@ p {
 /*HEADER*/
 #header {
 	font-family: 'Montserrat', sans-serif;
-	background:url("../img/background.jpg") no-repeat center fixed;
+	background:url("../img/background.jpg") no-repeat;
 	background-size:cover;
 	color:#ffffff;
 	position: relative;
